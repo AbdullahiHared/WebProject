@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #212529;
+  color: #fff;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+}
+
+.navbars {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ced4da;
+  font-weight: bold;
+}
+
+.navbars ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.navbars ul  li {
+    margin-right:20px;
+}
+
+.navbars .shoppingBag {
+  height: 24px;
+  margin-left: 20px;
+}
