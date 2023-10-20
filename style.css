@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
 
 body {
   margin: 0;
@@ -13,6 +14,9 @@ header {
   height: 4em;
   display: flex;
   cursor:pointer;
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 .logo {
     padding-left:15px;
@@ -20,60 +24,99 @@ header {
 
 .navbars {
   display: flex;
-  justify-content:space-around;
-  flex-wrap:wrap;
+  justify-content:flex-start;
   align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: #ced4da;
-  font-weight: bold;
+  color:#fffcf2;
+  font-weight:bold;
+  margin-right:-2em; 
 }
 
 .navbars ul {
     list-style: none;
     display: flex;
+    align-items:center;
     justify-content:space-between;
-    gap:20px;
+    gap:30px;
+    margin-right:30px;
+
 }
 
 .navbars ul  li {
-    margin-right:10px;
+  padding:10px;
 }
 
 .navbars .shoppingBag {
   height: 24px;
-  margin-left: 40px;
 }
 
 a:hover {
-    color:#f0ebd8;
-    transition:.5s;
+    color:#fb8500;
+    transition:2s;
 }
 
-h1, h4, p {
+/*Global items*/
+h1, H2, h4, p {
+  font-family:'Roboto Condensed', sans-serif;
   text-align:center;
 } 
 
 h1 {
   font-family:Roboto , 'Times New Roman', Times, serif;
-  color:#bc6c25;
 }
 
-.recommededItems {
+
+
+.announcement {
+  background-image:url('./images/culture.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  text-align:center;
+  color:#f9f7f3;
+  font-family:'Roboto ', monospace;
+  padding:50px 50px;
+
+}
+
+
+.productsShowcasing {
   display:flex;
   flex-direction:column;
+  justify-content:center;
+  flex-direction:column-reverse;
+  padding-inline-start:10px;
+  padding-inline-end:10px;
+  margin-top:20px;
+
+}
+
+.firstProducts, .secondProducts, .thirdProducts {
+  display:flex;
+  flex-direction:row;
+  gap:20px;
   justify-content:center;
   align-items:center;
 }
 
-.recommededItems .japaneseShirt {
-  width:17em;
-  border-radius:10px;
-  box-shadow:1px 2px 5px;
+.product img {
+  width:10em;
+  border-radius:4px;
 }
 
-.itemDescription {
-  color:#003049;
+.description .price {
+  background-color:#212529;
+  color:#fefae0;
+  width:10em;
+  text-align:center;
+  margin-top:-10px;
+  font-size:1rem;
+} 
+
+.productDescription {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-size: 13px;
 }

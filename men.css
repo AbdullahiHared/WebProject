@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #212529;
+  color: #fff;
+  height: 4em;
+  display: flex;
+  cursor:pointer;
+}
+.logo {
+    padding-left:15px;
+}
+
+.navbars {
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fffcf2;
+  font-weight: bold;
+}
+
+.navbars ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    gap:14px;
+}
+
+.navbars ul  li {
+    margin-right:10px;
+}
+
+.navbars .shoppingBag {
+  height: 24px;
+}
+
+a:hover {
+    color:#fb8500;
+    transition:2s;
+}
+
+/*Global items*/
+h1, h4, p {
+  text-align:center;
+} 
+
+.alifiedItems{
+  font-family:Roboto , 'Times New Roman', Times, serif;
+  color:#bc6c25;
+}
+
+main .recommededItems {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.recommededItems .japaneseShirt {
+  width:17em;
+  border-radius:10px;
+  box-shadow:1px 2px 5px;
+}
+
+.itemDescription {
+  color:#003049;
+}
