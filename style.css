@@ -93,30 +93,46 @@ h1 {
 
 }
 
-.firstProducts, .secondProducts, .thirdProducts {
+.firstProducts, .secondProducts, .thirdProducts, .fourthProducts, .fifthProduct{
   display:flex;
   flex-direction:row;
   gap:20px;
   justify-content:center;
   align-items:center;
+  cursor: pointer;
 }
 
 .product img {
   width:10em;
   border-radius:4px;
+  /* border:1px solid rgb(145, 141, 141); */
+  padding:4px;
 }
 
 .description .price {
   background-color:#212529;
   color:#fefae0;
-  width:10em;
+  width:8em;
   text-align:center;
   margin-top:-10px;
   font-size:1rem;
+  margin-left:20px;
 } 
+
+.description .price:hover {
+  background-color:white;
+  color:#212529;
+  transition: 0.5s;;
+}
 
 .productDescription {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   font-size: 13px;
 }
+
+
+footer {
+  background-color:#343a40;
+}
+
